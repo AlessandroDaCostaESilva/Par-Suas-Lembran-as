@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/actions.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Protest+Strike&family=Viga&display=swap" rel="stylesheet">
+    <title>Pará suas lembranças | Registrar</title>
+</head>
+<body>
+    <header class="headerMain">
+        <nav class="navigatorDisplay">
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="../img/logo.svg" alt="Logo">
+                </a>
+                </div>
+            <ul class="listaNav midNav">
+                <li><a href="#" class="textNav">SUPORTE</a></li>
+                <li><a href="#" class="textNav">SOBRE</a></li>
+                <li><a href="#" class="textNav">AVALIAÇÕES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="layoutMain">
+        <form action="#" class="formRegister" id="formRegister">
+            <h1 class="registerTitle">REGISTRAR-SE</h1>
+            <div class="boxRelative">
+                <label for="name" class="labelLR">
+                    Nome de usuário
+                </label>
+                <input type="text" id="name" class="inputRegister" autocomplete="off" required>
+            </div>
+            <div class="boxRelative">
+                <label for="email" class="labelLR">
+                    Email
+                </label>
+                <input type="email" id="email" class="inputRegister" autocomplete="off" required>
+            </div>
+            <div class="birthday">
+                <label for="birthday">
+                    Data de nascimento
+                </label>
+                <input type="date" id="birthday">
+            </div>
+            <div class="boxRelative">
+                <label for="password" class="labelLR">
+                    Senha
+                </label>
+                <input type="password" id="password" class="inputRegister" autocomplete="off" required>
+            </div>
+            <div class="boxRelative">
+                <label for="confirmPassword" class="labelLR">
+                    Confirme sua senha
+                </label>
+                <input type="password" id="confirmPassword" class="inputRegister" autocomplete="off" required>
+            </div>
+            <div class="confirmBox">
+                <input type="submit" value="EFETUAR REGISTRO" id="register">
+                <span class="RegisterDados">
+                    <a href="../../index.html">EFETUAR LOGIN</a>
+                </span>
+            </div>
+        </form>
+        <section class="alert">
+            <h3>Seus dados foram coletados com sucesso!</h3>
+            <p>Por favor, pressione o botão de efetuar registro novamente para ir até a tela inícial</p>
+        </section>
+    </main>
+    <script src="../js/dadosInput.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

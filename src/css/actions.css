@@ -7,20 +7,32 @@
     bottom: -20%;
     left: -40%;
     opacity: 0;
-    transition: ease 500ms;
+    transition: ease 300ms;
 }
 
 .textNav:hover::after{
-    transition: ease 500ms;
+    transition: ease 300ms;
     opacity: 1;
     left: -5%;
 }
 
-.btnScrow:hover{
+#submitButton:hover{
     border: #146EA6 solid 2px;
     background-color: #fff;
     color: #146EA6;
     transform: scale(1.1);
+    padding: 15px;
+    font-size: 1rem;
+    transition: ease 500ms;
+}
+
+.btnScroll:hover{
+    border: #146EA6 solid 2px;
+    background-color: #fff;
+    color: #146EA6;
+    transform: scale(1.1);
+    padding: 15px;
+    font-size: 1.5rem;
     transition: ease 500ms;
 }
 
@@ -28,6 +40,7 @@
     border: #146EA6 solid 2px;
     background-color: #fff;
     transform: scale(1.1);
+    font-size: 1rem;
     transition: ease 500ms;
 }
 
@@ -37,4 +50,13 @@
 
 .logo:hover{
     transform: scale(1.05);
+}
+
+#register:hover{
+    border: #146EA6 solid 2px;
+    background-color: #fff;
+    color: #146EA6;
+    transform: scale(1.1);
+    font-size: 1rem;
+    transition: ease 500ms;
 }

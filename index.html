@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="stylesheet" href="./src/css/header.css">
     <link rel="stylesheet" href="./src/css/home.css">
-    <link rel="stylesheet" href="./src/css/homeActions.css">
+    <link rel="stylesheet" href="./src/css/actions.css">
+    <link rel="stylesheet" href="./src/css/productAndCards.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Protest+Strike&family=Viga&display=swap" rel="stylesheet">
@@ -20,24 +22,202 @@
                 </a>
                 </div>
             <ul class="listaNav midNav">
-                <li><a href="#" class="textNav">CONTATOS</a></li>
-                <li><a href="#" class="textNav">SOBRE</a></li>
-                <li><a href="#" class="textNav">AVALIAÇÕES</a></li>
+                <li><span class="textNav" id="btnSup">SUPORTE</span></li>
+                <li><a href="./src/pages/aboutUS.html" class="textNav">SOBRE</a></li>
+                <li><a href="./src/pages/ava.html" class="textNav">AVALIAÇÕES</a></li>
             </ul>
             <ul class="listaNav endNav">
-                <li><a href="#" class="textNav">LOGIN</a></li>
-                <li class="registerNav"><a href="#">REGISTRAR-SE</a></li>
+                <li><span class="textNav" id="loginBtn">LOGIN</span></li>
+                <li class="registerNav"><a href="./src/pages/register.html">REGISTRAR-SE</a></li>
             </ul>
         </nav>
+        <form action="#" id="loginForm" autocomplete="off">
+            <h2 class="loginTitle">FAZER LOGIN</h2>
+            <div class="loginInfo">
+                <label for="userName">Nome de usuário</label>
+                <input type="text" name="userName" id="userName" class="inputLogin">
+            </div>
+            <div class="loginInfo">
+                <label for="password">Senha</label>
+                <input type="text" name="senha" id="password" class="inputLogin">
+            </div>
+            <div class="loginInfo">
+                <input type="checkbox" name="rememberUser" id="rememberMe">
+                <label for="rememberMe">Lembre-me</label>
+            </div>
+            <div class="submitLogin">
+                <input type="submit" value="Entrar" id="submitButton">
+            </div>
+        </form>
     </header>
-    <main>
-        <section class="bakgroundApresetacao">
+
+    <main id="main">
+        <section class="exibicaoPrincipal">
             <div class="apresentacaoEsquerda">
                 <h1 class="textInfo titulo">NÃO SAIA DO PARÁ</h1>
                 <p class="textInfo">SEM LEVAR UMA LEMBRANÇA COM VOCÊ. <br> OLÁ VISITANTE, AQUI VOCÊ ENCONTRA O MELHOR DA CULTURA AMAZÔNICA EM LEMBRANÇAS ÚNICAS E AUTÊNTICAS. <br>LEVE UM POUCO DA BELEZA DA AMAZÔNIA PARA CASA!</p>
-                <span class="btnScrow textInfo">IR ÀS COMPRAS</span>
+                <span class="btnScroll textInfo" id="goProduct">IR ÀS COMPRAS</span>
             </div>
         </section>
+        <div class="products">
+            <h2 class="titleProduct">
+                <span class="linhaMarajoara">CATALOGO DE PRODUTOS </span></h2>
+            </div>
+            <section class="cardsLayout">
+                <nav class="itensVenda">
+                    <h3 class="nomeCompra">Miriti</h3>
+                    <ul class="cartoesOrg">
+                        <li class="cartao">
+                            <div class="imagmexemplo pMiriti"></div>
+                            <div class="maisInfo">
+                                <h4 class="nomeItem">Barco de miriti</h4>
+                                <p class="descricaoItem">O barco de miriti é uma embarcação tradicional da região amazônica, feita com a madeira leve da árvore miriti (também conhecida como buriti em algumas regiões). É uma pequena canoa ou bote, leve e flutuante, usado principalmente em festivais culturais e celebrações tradicionais, como o Círio de Nazaré. O barco é caracterizado por sua construção artesanal, sendo moldado a partir da madeira do miriti e amarrado com fibras vegetais.</p>
+                                <a href="#" class="carrinho">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cartao">
+                            <div class="imagmexemplo sMiriti"></div>
+                            <div class="maisInfo">
+                                <h4 class="nomeItem">Ave de miriti</h4>
+                                <p class="descricaoItem">As aves de miriti são pequenas esculturas de pássaros feitas com a madeira leve da árvore miriti (também conhecida como buriti em algumas regiões). Essas peças são esculpidas à mão por artesãos locais da região amazônica, que moldam e pintam as aves com cores vivas e detalhes minuciosos para criar representações artísticas. As aves de miriti são tradicionais da cultura amazônica e são frequentemente usadas em festivais, celebrações e decorações locais.</p>
+                                <a href="#" class="carrinho">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cartao">
+                            <div class="imagmexemplo tMiriti"></div>
+                            <div class="maisInfo">
+                                <h4 class="nomeItem">Casal de miriti</h4>
+                                <p class="descricaoItem">O casal de miriti é uma representação tradicional da cultura amazônica, feita com a madeira leve da árvore miriti (também conhecida como buriti em algumas regiões). Consiste em duas esculturas esculpidas à mão, normalmente representando um homem e uma mulher ou figuras míticas da região. Essas peças são decoradas com cores vibrantes e detalhes minuciosos, frequentemente vestindo roupas típicas ou adornos que refletem a cultura local.</p>
+                                <a href="#" class="carrinho">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cartao">
+                            <div class="imagmexemplo qMiriti"></div>
+                            <div class="maisInfo">
+                                <h4 class="nomeItem">Cobra de miriti</h4>
+                                <p class="descricaoItem">A cobra de miriti é uma escultura tradicional feita com a madeira leve da árvore miriti (também conhecida como buriti em algumas regiões). Essa peça artesanal representa uma cobra, um animal simbólico na cultura amazônica. Os artesãos esculpem a madeira de miriti em forma de cobra, moldando-a com detalhes intricados para dar vida à figura. A cobra de miriti pode ser pintada com cores vivas e padrões variados, destacando a criatividade e habilidade dos artistas locais.</p>
+                                <a href="#" class="carrinho">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h3 class="nomeCompra">MARAJOARA</h3>
+                    <ul class="cartoesOrg">
+                        <li class="cartao">
+                            <div class="imagmexemplo pVaso"></div>
+                            <div class="maisInfo">
+                                <h4 class="nomeItem">Cobra de miriti</h4>
+                                <p class="descricaoItem">A cobra de miriti é uma escultura tradicional feita com a madeira leve da árvore miriti (também conhecida como buriti em algumas regiões). Essa peça artesanal representa uma cobra, um animal simbólico na cultura amazônica. Os artesãos esculpem a madeira de miriti em forma de cobra, moldando-a com detalhes intricados para dar vida à figura. A cobra de miriti pode ser pintada com cores vivas e padrões variados, destacando a criatividade e habilidade dos artistas locais.</p>
+                                <a href="#" class="carrinho">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cartao">
+                            <div class="imagmexemplo sVaso"></div>
+                            <div class="maisInfo">
+                                <h4 class="nomeItem">Cobra de miriti</h4>
+                                <p class="descricaoItem">A cobra de miriti é uma escultura tradicional feita com a madeira leve da árvore miriti (também conhecida como buriti em algumas regiões). Essa peça artesanal representa uma cobra, um animal simbólico na cultura amazônica. Os artesãos esculpem a madeira de miriti em forma de cobra, moldando-a com detalhes intricados para dar vida à figura. A cobra de miriti pode ser pintada com cores vivas e padrões variados, destacando a criatividade e habilidade dos artistas locais.</p>
+                                <a href="#" class="carrinho">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cartao">
+                            <div class="imagmexemplo tVaso"></div>
+                            <div class="maisInfo">
+                                <h4 class="nomeItem">Cobra de miriti</h4>
+                                <p class="descricaoItem">A cobra de miriti é uma escultura tradicional feita com a madeira leve da árvore miriti (também conhecida como buriti em algumas regiões). Essa peça artesanal representa uma cobra, um animal simbólico na cultura amazônica. Os artesãos esculpem a madeira de miriti em forma de cobra, moldando-a com detalhes intricados para dar vida à figura. A cobra de miriti pode ser pintada com cores vivas e padrões variados, destacando a criatividade e habilidade dos artistas locais.</p>
+                                <a href="#" class="carrinho">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cartao">
+                            <div class="imagmexemplo qVaso"></div>
+                            <div class="maisInfo">
+                                <h4 class="nomeItem">Cobra de miriti</h4>
+                                <p class="descricaoItem">A cobra de miriti é uma escultura tradicional feita com a madeira leve da árvore miriti (também conhecida como buriti em algumas regiões). Essa peça artesanal representa uma cobra, um animal simbólico na cultura amazônica. Os artesãos esculpem a madeira de miriti em forma de cobra, moldando-a com detalhes intricados para dar vida à figura. A cobra de miriti pode ser pintada com cores vivas e padrões variados, destacando a criatividade e habilidade dos artistas locais.</p>
+                                <a href="#" class="carrinho">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <h3 class="nomeCompra">CHEIROS DO PARÁ</h3>
+                    <ul class="cartoesOrg">
+                        <li class="cartao">
+                            <div class="imagmexemplo pCheiro"></div>
+                            <div class="maisInfo">
+                                <h4 class="nomeItem">Cobra de miriti</h4>
+                                <p class="descricaoItem">A cobra de miriti é uma escultura tradicional feita com a madeira leve da árvore miriti (também conhecida como buriti em algumas regiões). Essa peça artesanal representa uma cobra, um animal simbólico na cultura amazônica. Os artesãos esculpem a madeira de miriti em forma de cobra, moldando-a com detalhes intricados para dar vida à figura. A cobra de miriti pode ser pintada com cores vivas e padrões variados, destacando a criatividade e habilidade dos artistas locais.</p>
+                                <a href="#" class="carrinho">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cartao">
+                            <div class="imagmexemplo sCheiro"></div>
+                            <div class="maisInfo">
+                                <h4 class="nomeItem">Cobra de miriti</h4>
+                                <p class="descricaoItem">A cobra de miriti é uma escultura tradicional feita com a madeira leve da árvore miriti (também conhecida como buriti em algumas regiões). Essa peça artesanal representa uma cobra, um animal simbólico na cultura amazônica. Os artesãos esculpem a madeira de miriti em forma de cobra, moldando-a com detalhes intricados para dar vida à figura. A cobra de miriti pode ser pintada com cores vivas e padrões variados, destacando a criatividade e habilidade dos artistas locais.</p>
+                                <a href="#" class="carrinho">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cartao">
+                            <div class="imagmexemplo tCheiro"></div>
+                            <div class="maisInfo">
+                                <h4 class="nomeItem">Cobra de miriti</h4>
+                                <p class="descricaoItem">A cobra de miriti é uma escultura tradicional feita com a madeira leve da árvore miriti (também conhecida como buriti em algumas regiões). Essa peça artesanal representa uma cobra, um animal simbólico na cultura amazônica. Os artesãos esculpem a madeira de miriti em forma de cobra, moldando-a com detalhes intricados para dar vida à figura. A cobra de miriti pode ser pintada com cores vivas e padrões variados, destacando a criatividade e habilidade dos artistas locais.</p>
+                                <a href="#" class="carrinho">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cartao">
+                            <div class="imagmexemplo qCheiro"></div>
+                            <div class="maisInfo">
+                                <h4 class="nomeItem">Cobra de miriti</h4>
+                                <p class="descricaoItem">A cobra de miriti é uma escultura tradicional feita com a madeira leve da árvore miriti (também conhecida como buriti em algumas regiões). Essa peça artesanal representa uma cobra, um animal simbólico na cultura amazônica. Os artesãos esculpem a madeira de miriti em forma de cobra, moldando-a com detalhes intricados para dar vida à figura. A cobra de miriti pode ser pintada com cores vivas e padrões variados, destacando a criatividade e habilidade dos artistas locais.</p>
+                                <a href="#" class="carrinho">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
     </main>
+    <footer class="contatos">
+        <h2 class="titleProduct">
+            <span class="linhaMarajoara">FALE CONOSCO</span></h2>
+        <div class="meiosContato">
+            <p class="textoSuporte">Obtenha o suporte necessário através de nossos meios de contato. Forneça algumas informações e apresentaremos a melhor solução</p>
+            <div class="contactCol">
+                <h5 class="contactZ">WHATSAPP</h5>
+                <p>Fale conosco através do nosso whatsapp de numero (91) 9 9999-9999</p>
+            </div>
+            <div class="contactCol">
+                <h5  class="contactL">LINKEDIN</h5>
+                <p>Fale conosco através da nossa página no linkedin</p>
+            </div>
+            <div class="contactCol">
+                <h5  class="contactI">INSTAGRAM</h5>
+                <p>Fale conosco através do nosso instagram de usuário @ParaSuasLembrancas</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/dadosInput.js"></script>
 </body>
 </html>
