@@ -157,25 +157,29 @@
 }
 
 .meiosContato{
+    height: 25vh;
+    width: 100%;
     padding: 1%;
     color: #4C4C4C;
     display: flex;
-    align-items: end;
     gap: 15px;
 }
 
 .textoSuporte{
     display: inline-block;
     height: 100%;
-    width: 40%;
+    width: 20%;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .contactCol{
+    height: 100%;
+    width: 20%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    padding: 25px;
+    gap: 15px;
 }
 
 .contactZ{

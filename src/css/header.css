@@ -1,7 +1,7 @@
 .headerMain{
     width: 100%;
-    height: 13vh;
-    padding: 25px;
+    height: 10vh;
+    padding: 10px;
     display: flex;
     position: relative;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -9,7 +9,7 @@
 
 .logo{
     width: 12%;
-    height: 100%;
+    height: 80%;
 }
 
 .logo img{
@@ -27,29 +27,31 @@
 
 .listaNav{
     display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
-    gap: 25px;
     height: 100%;
-    padding: 6.5px 0 0 0;
+    min-width: 15rem;
 }
 
 .textNav{
+    font-weight: 400;
     color: #146EA6;
-    font-size: clamp(10px, 1.2rem, 60px);
+    font-size: clamp(10px, 1.1rem, 60px);
     position: relative;
     cursor: pointer;
 }
 
 .registerNav{
     padding: 10px;
-    font-size: clamp(10px, 1.2rem, 60px);
     border-radius: 15px;
+    font-weight: 500;
     background-color: #146EA6;
+    font-size: clamp(10px, 1rem, 60px);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10vw;
+    width: 60%;
     height: 80%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: ease 500ms;
